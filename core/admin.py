@@ -7,7 +7,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 
 from core import models
-from core.models import acessorio, categoria, cor
+from core.models import acessorio, categoria, cor, marca
 
 class UserAdmin(BaseUserAdmin):
     """Define the admin pages for users."""
@@ -53,3 +53,4 @@ admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Acessorio)
 admin.site.register(models.Categoria)
 admin.site.register(models.Cor)
+admin.site.register(models.Marca)
